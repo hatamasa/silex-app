@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users</title>
+    </head>
+	<body>
+	<h1>Users</h1>
+	<hr>
+	{% for user in param %}
+        	{% for key, value in user %}
+        		<h1>{{ key }}: {{ value }}</h1>
+        	{% endfor %}
+        	<hr>
+	{% endfor %}
+	</body>
+</html>

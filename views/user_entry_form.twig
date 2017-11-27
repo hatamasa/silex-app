@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UserEntryForm</title>
+    </head>
+	<body>
+	<h1>UserEntryForm</h1>
+ 		<form action="{{ url('user_entry') }}" method="post">
+        		<table>
+    				<tbody>
+                		<tr>
+                		<th>user_id</th>
+                    		<td>
+                    			<input type="text" name="user[user_id]" value="">
+                    		</td>
+                		</tr>
+                		<tr>
+                			<th>user_name</th>
+                    		<td>
+                    			<input type="text" name="user[user_name]" value="">
+                    		</td>
+                		</tr>
+                		<tr>
+                    		<th>age</th>
+                    		<td>
+                    			<input type="text" name="user[age]" value="">
+                    		</td>
+                		</tr>
+            		</tbody>
+        		</table>
+        		<button type="submit" class="btn btn-primary" name="button">登録</button>
+        </form>
+	</body>
+</html>
